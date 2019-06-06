@@ -17,9 +17,107 @@
     <title>Bootstrap Toasty</title>
 </head>
 <body>
-    <button class="btn btn-primary">
-        Try toast
-    </button>
+
+    <main role="main" class="flex-shrink-0">
+        <div class="container">
+            <h1 class="mt-5">Bootstrap-Toasty Examples</h1>
+            <p class="lead">Bootstrap-Toasty is a jQuery plugin for all your Toasty needs, with a simple call.</p>
+            <p>
+                <a href="https://github.com/Tosindo/Bootstrap-Toasty/">Click here for usage and downloads.</a>
+            </p>
+            
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col">
+                        <button id="toastExample1"  class="btn btn-primary w-100">
+                            Try a toast
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="jumbotron">
+                <div class="row mt-3">
+                    <div class="col">
+                        <h4>Choose a position:</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <select id="toastExample2Select" class="form-control custom-select">
+                            <option value="top_left">Top Left</option>
+                            <option value="top_middle">Top Middle</option>
+                            <option value="top_right">Top Right</option>
+                            <option value="bottom_left">Bottom Left</option>
+                            <option value="bottom_middle">Bottom Middle</option>
+                            <option value="bottom_right">Bottom Right</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <button id="toastExample2"  class="btn btn-primary">
+                            Toast Away!
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="jumbotron">
+                <div class="row mt-3">
+                    <div class="col">
+                        <h4>With custom html:</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button id="toastExample3"  class="btn btn-primary">
+                            Toast!
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="jumbotron">
+                <div class="row mt-3">
+                    <div class="col">
+                        <h4>Without the X button:</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button id="toastExample4"  class="btn btn-primary">
+                            Toast!
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+                
+            <div class="jumbotron">
+                <div class="row mt-3">
+                    <div class="col">
+                        <h4>This one only closes when you decide to:</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button id="toastExample5"  class="btn btn-primary">
+                            Toast!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     
@@ -29,8 +127,49 @@
     
     <script src="src/js/bootstrap-toasty.js"></script>
     <script>
-        $.BToasty({title: "test", autoHide: false, position: "top_middle"});
-        $.BToasty("test", "body", null, "bottom_middle", false);
+
+
+        $("#toastExample1").on("click", function() {
+            $.BToasty("Hello!", "I have a body!", "", "bottom_middle");
+        });
+
+        $("#toastExample2").on("click", function() {
+            $.BToasty("Hello!", "Do you like my position?", "I'm customized", $("#toastExample2Select").val());
+        });
+
+        $("#toastExample3").on("click", function() {
+            $.BToasty({
+                title: "This toast as an HTML body!",
+                body:"<b>I'm bold!</b><p><i>This is italic!</i></p><button class='btn btn-primary'>This is a button!!</button>"
+            })
+        })
+        
+        $("#toastExample4").on("click", function() {
+            $.BToasty({
+                title: "I'll stay here for a while",
+                xbutton: false,
+                autoHide: true,
+                duration: 6000,
+                position:"top_middle",
+            });
+        });
+        
+        $("#toastExample5").on("click", function() {
+            $.BToasty({
+                title: "I'll never leave, unless you want me to.",
+                xbutton: true,
+                autoHide: false,
+                position:"bottom_middle",
+            });
+        });
+
+        $.BToasty({
+            title: "Welcome to a Toasty land!",
+            extra: "time-auto",
+            xbutton: true,
+            duration: 10000,
+            position: "top_right",
+        });
     </script>
 </body>
 </html>

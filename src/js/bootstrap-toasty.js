@@ -18,7 +18,7 @@
         });
 
 
-    }, 5000);
+    }, 1500);
 
 
     /** @const */ var TOASTY_CONTAINER = "<div aria-live='polite' aria-atomic='true' class='btoasty-container'></div>";    
@@ -164,9 +164,12 @@
                 $('.btoasty-container').find("." + position).append(toast);
 
                 $(toast).toast('show');
+                
                 $(toast).on("hidden.bs.toast", function() {
                     $(toast).remove();
                 });
+
+                return $(toast);
             }
 
             else {
@@ -187,7 +190,7 @@
                         break;
                 }
 
-                $.BToasty(obj);
+                return $.BToasty(obj);
             }
 
 
