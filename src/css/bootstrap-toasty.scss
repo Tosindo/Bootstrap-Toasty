@@ -1,0 +1,51 @@
+@mixin wrap($x, $y)
+{
+    margin:10px;
+
+    width: 100%;
+    max-width: 350px;
+
+    position: fixed;
+    @if ($x == -1) {
+        left: 0;
+    }@else if ($x == 1) {
+        right: 0;
+    }@else if ($x == 0) {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @if ($y == -1) {
+        top: 0;
+    }@else if ($y == 1) {
+        bottom: 0;
+    }@else if ($y == 0) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.btoasty-container {
+    position:fixed;
+    z-index: 1050;
+    top:0;
+
+    .btoasty-wrap-top-left {
+        @include wrap(-1, -1);
+    }
+    .btoasty-wrap-top-right {
+        @include wrap(1, -1);
+    }
+    .btoasty-wrap-top-middle {
+        @include wrap(0, -1);
+    }
+    .btoasty-wrap-bottom-left {
+        @include wrap(-1, 1);
+    }
+    .btoasty-wrap-bottom-right {
+        @include wrap(1, 1);
+    }
+    .btoasty-wrap-bottom-middle {
+        @include wrap(0, 1);
+    }
+}

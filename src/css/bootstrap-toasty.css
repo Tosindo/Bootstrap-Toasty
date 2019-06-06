@@ -1,0 +1,64 @@
+.btoasty-container {
+  position: fixed;
+  z-index: 1050;
+  top: 0;
+}
+
+.btoasty-container .btoasty-wrap-top-left {
+  margin: 10px;
+  width: 100%;
+  max-width: 350px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.btoasty-container .btoasty-wrap-top-right {
+  margin: 10px;
+  width: 100%;
+  max-width: 350px;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.btoasty-container .btoasty-wrap-top-middle {
+  margin: 10px;
+  width: 100%;
+  max-width: 350px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
+}
+
+.btoasty-container .btoasty-wrap-bottom-left {
+  margin: 10px;
+  width: 100%;
+  max-width: 350px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.btoasty-container .btoasty-wrap-bottom-right {
+  margin: 10px;
+  width: 100%;
+  max-width: 350px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.btoasty-container .btoasty-wrap-bottom-middle {
+  margin: 10px;
+  width: 100%;
+  max-width: 350px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+}
+/*# sourceMappingURL=bootstrap-toasty.css.map */
