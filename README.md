@@ -9,7 +9,7 @@ Bootstrap-Toasty is a jQuery plugin for all your Toasty needs, with a simple cal
 ## Usage:
 
 ```javascript
-    $.BToasty("Title", "Body", "Extra", "bottom_middle", true, 3000);
+$.BToasty("Title", "Body", "Extra", "bottom_middle", true, 3000);
 ```
 ![Toast Example #1](assets/imgs/Toast-Example.png)
 
@@ -26,14 +26,14 @@ This is the normal way to use BToasty, with 5 simple parameters which are option
 You can also run it with an object, which you can have more parameters for example:
 
 ```javascript
-    $.BToasty({
-        title: "The process as completed!",
-        body: "The user was successfully added to the database.",
-        extra: "time-auto",
-        xbutton: false,
-        position: "top_right",
-        img: {src: "https://via.placeholder.com/26", alt: "Placeholder Image"},
-    });
+$.BToasty({
+    title: "The process as completed!",
+    body: "The user was successfully added to the database.",
+    extra: "time-auto",
+    xbutton: false,
+    position: "top_right",
+    img: {src: "https://via.placeholder.com/26", alt: "Placeholder Image"},
+});
 ```
 
 This will show a Toast in the top-right like this:
