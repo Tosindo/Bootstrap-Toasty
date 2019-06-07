@@ -1,0 +1,32 @@
+{
+  "name": "Bootstrap-Toasty",
+  "description": "Bootstrap-Toasty is a jQuery plugin for all your Bootstrap Toast needs, with a simple call.",
+  "version": "1.0",
+  "maintainers": [
+    {
+      "name": "Ivo Silva a.k.a. Tosindo",
+      "email": "ivompst@gmail.com",
+      "web": ""
+    }
+  ],
+  "demos": [
+    "index.html"
+  ],
+  "dependencies": {
+    "https://jquery.com/": "v3.4.1",
+    "https://getbootstrap.com/": "v4.3.1"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/Tosindo/Bootstrap-Toasty.git"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "MIT",
+      "url": "https://github.com/Tosindo/Bootstrap-Toasty/blob/master/LICENSE"
+    }
+  ],
+  "homepage": "https://tosindo.github.io/Bootstrap-Toasty/"
+}
