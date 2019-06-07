@@ -1,6 +1,6 @@
 # Bootstrap-Toasty
 
-Bootstrap-Toasty is a jQuery plugin for all your Toasty needs, with a simple call.
+Bootstrap-Toasty is a jQuery plugin for all your Toast needs, with a simple call.
 
 
 ## [Examples](https://tosindo.github.io/Bootstrap-Toasty/)
