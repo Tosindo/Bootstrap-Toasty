@@ -44,6 +44,12 @@ Now you might be wondering what is 'time-auto' in extra?
 
 Well that is an extra feature that is active by default, it will update the seconds on the toast over time, so it will apear for example '~50 seconds ago' or '~2 minutes ago'.
 
+## Todo:
+
+- [ ] Make it so if the Toasts are on mobile they stack better, only have TOP-MIDDLE and BOTTOM-MIDDLE positions.
+- [ ] Find a way to stop toasts from overlapping (top-left with bottom-left, etc), either by retaining them, or by finding another position to go to.
+- [ ] Add a easy button and prompt toast system, with events.
+- [ ] Add easier event system for the toasts, (e.g. On hide, on show, on click, etc)
 
 ## Download:
 
