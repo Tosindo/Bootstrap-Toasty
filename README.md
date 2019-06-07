@@ -1,5 +1,8 @@
 # Bootstrap-Toasty
 
+[![Release](https://img.shields.io/github/release/tosindo/bootstrap-toasty.svg?style=flat-square)](https://github.com/Tosindo/Bootstrap-Toasty/releases/latest)
+![License | MIT](https://img.shields.io/github/license/tosindo/bootstrap-toasty.svg?style=flat-square)
+
 Bootstrap-Toasty is a jQuery plugin for all your Toast needs, with a simple call.
 
 
